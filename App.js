@@ -9,17 +9,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#202020",
-    justifyContent: "flex-end",
     width: "100%",
     height: "100%",
     
   },
+
+  textContainer: {
+    width: "100%",
+    height: "20%",
+  },
+
+  buttonContainer:{
+    width: "100%",
+    height: "70%",
+  },
+
   value: {
     color: "#fff",
     fontSize: 40,
     textAlign: "right",
     marginRight: 20,
-    marginBottom: 10
+    marginBottom: 10,
   }
 });
 
@@ -33,12 +43,15 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" />
-        <SafeAreaView>
+
+        <View style = {styles.textContainer}>
           <Text style={styles.value}>
             {parseFloat(this.state.currentValue).toLocaleString()}
           </Text>
-          <Row>
+        </View>
+
+        <View style = {styles.buttonContainer}>
+        <Row>
             <Button
               text="C"
               theme="secondary"
@@ -95,19 +108,12 @@ export default class App extends React.Component {
           </Row>
 
           <Row>
-            <Button
-              text="0"
-              size="double"
-              onPress={() => this.handleTap("number", 0)}
-            />
+            <Button text="0" size = "double" onPress={() => this.handleTap("number", 0)} style = {{width:"50%",}}/>
             <Button text="." onPress={() => this.handleTap("number", ".")} />
-            <Button
-              text="="
-              theme="accent"
-              onPress={() => this.handleTap("equal")}
-            />
+            <Button text="=" theme="accent" onPress={() => this.handleTap("equal")} />
           </Row>
-        </SafeAreaView>
+        </View>
+          
       </View>
     );
   }

@@ -1,9 +1,6 @@
 import React from "react";
 import { TouchableOpacity, StyleSheet, Text, Dimensions } from "react-native";
 
-const screen = Dimensions.get("window");
-const buttonWidth = screen.width / 4;
-
 const styles = StyleSheet.create({
   text: {
     color: "#fff",
@@ -14,18 +11,19 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#333333",
-    flex: 1,
-    height: Math.floor(buttonWidth - 10),
+    height: "100%",
+    width: "20%",
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: Math.floor(buttonWidth),
-    margin: 5
   },
   buttonDouble: {
-    width: screen.width / 2 - 10,
-    flex: 0,
-    alignItems: "flex-start",
-    paddingLeft: 40
+    width: "40%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    // flex: 0,
+    // alignItems: "flex-start",
+    // paddingLeft: 40
   },
   buttonSecondary: {
     backgroundColor: "#a6a6a6"
