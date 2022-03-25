@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "sampleapplication",
-    "slug": "sampleapplication",
+    "name": "dark-calculator",
+    "slug": "dark-calculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
