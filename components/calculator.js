@@ -9,6 +9,10 @@ export const handleNumber = (value, state) => {
     return { currentValue: `${value}` };
   }
 
+  if(state.currentValue.length == 10){
+    return { currentValue: "0" };
+  }
+
   return {
     currentValue: `${state.currentValue}${value}`
   };

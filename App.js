@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, StatusBar, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View} from "react-native";
 
 import Row from "./components/Row";
 import Button from "./components/Button";
@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
 
   textContainer: {
     width: "100%",
-    height: "20%",
+    // height: "20%",
+    maxHeight: "20%",
   },
 
   buttonContainer:{
