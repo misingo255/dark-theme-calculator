@@ -4,7 +4,8 @@ import { TouchableOpacity, StyleSheet, Text, Dimensions } from "react-native";
 const styles = StyleSheet.create({
   text: {
     color: "#fff",
-    fontSize: 25
+    fontSize: 25,
+    fontWeight: "bold",
   },
   textSecondary: {
     color: "#060606"
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   buttonDouble: {
-    width: "40%",
+    width: "45%",
     height: "100%",
     alignItems: "center",
     justifyContent: "center",
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     // paddingLeft: 40
   },
   buttonSecondary: {
-    backgroundColor: "#a6a6a6"
+    backgroundColor: "#ffffff"
   },
   buttonAccent: {
     backgroundColor: "#f09a36"

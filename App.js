@@ -8,7 +8,7 @@ import calculator, { initialState } from "./components/calculator";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#202020",
+    backgroundColor: "#045b62",
     width: "100%",
     height: "100%",
     
@@ -108,7 +108,7 @@ export default class App extends React.Component {
           </Row>
 
           <Row>
-            <Button text="0" size = "double" onPress={() => this.handleTap("number", 0)} style = {{width:"50%",}}/>
+            <Button text="0" size = "double" onPress={() => this.handleTap("number", 0)}/>
             <Button text="." onPress={() => this.handleTap("number", ".")} />
             <Button text="=" theme="accent" onPress={() => this.handleTap("equal")} />
           </Row>
